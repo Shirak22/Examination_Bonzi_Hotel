@@ -22,6 +22,7 @@ a{text-decoration: none;}
 html{
     scroll-behavior: smooth;
 }
+
 body {
     margin: 0;
     background-color: var(--black-background);
@@ -474,3 +475,73 @@ footer{
     padding:.4rem 3rem;
     font-size: 1.12rem;
 }
+
+
+/* about page styling  */
+.about__page{
+    background:linear-gradient(50deg, #0009, #0009), url('../assets/photos/09-night.jpg');
+    background-size:cover ;
+}
+.about__content{
+    max-width: 960px;
+    margin: 0 auto;
+}
+/* Gallery Section  */
+
+.gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.gallery__selected_image{
+    width: 100%;
+}
+.gallery__thumbnails{
+    display: flex;
+    gap: 1rem;
+    margin: 1rem auto;
+
+}
+.gallery__thumbnails > img{
+    width: 6.25rem;
+    height: 6.25rem;
+    object-fit: cover;
+}
+
+/* about page / Article Section  */
+
+.article__sideimage_fullwidth{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10rem;
+}
+
+.article__sideimage_fullwidth__body{
+    display: flex;
+    margin: 3rem 0;
+    margin-bottom: 10rem;
+    gap: 2rem;
+    align-items: stretch;
+}
+.article__sideimage_fullwidth__image{
+   width: 100%;
+   max-width: 16rem;
+   object-fit: cover;
+   object-position: left bottom;
+   flex: 1;
+}
+.article__sideimage_fullwidth__text{
+    flex: 3;
+    margin: 0;
+    break-inside: auto;
+    color: var(--navbar_menu-text-color);
+    white-space: pre-line;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+}
+
+
