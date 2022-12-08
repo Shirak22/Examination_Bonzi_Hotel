@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="navbar__wrapper">
+    <div class="navbar__wrapper navbar--book">
         <!-- Navbar  -->
         <nav class="navbar">
             
@@ -23,13 +23,88 @@
         </nav>
     </div>
 
+    <main class="main__book">
+        <section class="main_content">
+            <h1 class="main__content_header main__book_header">book your bonz.ai experience </h1>
+            <section class="main__book_input">
+                <ul class="main__book_inputfields">
+                    <li> 
+                        <label for="arrival" class="main__book_input_label">arrival</label>
+                        <input type="date" id="arrival" class="main__book_inputfield">
+                    </li>
+                    <li> 
+                        <label for="nights" class="main__book_input_label">nights</label>
+                        <input type="number" min="1" id="nights" class="main__book_inputfield" value="1">
+                    </li>
+                    <li> 
+                        <label for="departure" class="main__book_input_label">departure</label>
+                        <input type="date" id="departure" class="main__book_inputfield">
+                    </li>
+                    <li> 
+                        <label for="adults" class="main__book_input_label">adults</label>
+                        <input type="number" min="1" id="adults" class="main__book_inputfield" value="1">
+                    </li>
+                    <li> 
+                        <label for="children" class="main__book_input_label">children</label>
+                        <input type="number" min="1" id="children" class="main__book_inputfield" value="1">
+                    </li>
+                </ul>
+            </section>
+            <section class="main__book_cards">
+                <article class="book__card">
+                    <img class="book__card__img"  src="../assets/photos/03-day.jpg" alt="">
+                    <aside class="book__card__text">
+                        <h2>private loft suite</h2>
+                        <ul>
+                            <li>eko living</li>
+                            <li>AI driven service</li>
+                            <li>access to all facilities</li>
+                        </ul>
+                    </aside>
+                    <aside class="book__card__price">
+                        <p>$ 780.00</p>
+                        <button>book now</button>
+                    </aside>
+                </article>
 
+                <article class="book__card">
+                    <img class="book__card__img"  src="../assets/photos/03-day.jpg" alt="">
+                    <aside class="book__card__text">
+                        <h2>private loft suite</h2>
+                        <ul>
+                            <li>eko living</li>
+                            <li>AI driven service</li>
+                            <li>access to all facilities</li>
+                        </ul>
+                    </aside>
+                    <aside class="book__card__price">
+                        <p>$ 780.00</p>
+                        <button>book now</button>
+                    </aside>
+                </article>
+                <article class="book__card">
+                    <img class="book__card__img"  src="../assets/photos/03-day.jpg" alt="">
+                    <aside class="book__card__text">
+                        <h2>private loft suite</h2>
+                        <ul>
+                            <li>eko living</li>
+                            <li>AI driven service</li>
+                            <li>access to all facilities</li>
+                        </ul>
+                    </aside>
+                    <aside class="book__card__price">
+                        <p>$ 780.00</p>
+                        <button>book now</button>
+                    </aside>
+                </article>
+            </section>
+
+        </section>
+    </main>
 
 
 
     <footer >
-           
-    
         <!-- Bonz.ai footer information   -->
         <section class="footer__info">
             <article class="footer__info_adress">
@@ -50,7 +125,6 @@
                 </p>
             </article>
         </section>
-
     </footer>
 </body>
 </html>

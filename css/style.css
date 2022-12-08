@@ -58,9 +58,11 @@ button {
 
 .navbar--onscroll {
     background-color: var(--black-background);
-
 }
 
+.navbar--book {
+    position: relative;
+}
 .navbar__logo {
     flex-grow: 1;
     margin: 0;
@@ -355,7 +357,11 @@ main {
 /* The footer Section  */
 footer{
     margin: 5rem 0;
+    padding: 0 2rem;
+    max-width: var(--max-content-width);
+    width: 100%;
 }
+
 .footer__brand_carusel{
     margin: 5rem 0;
     display: flex;
@@ -379,4 +385,89 @@ footer{
     margin: 0 .2rem;
 }
 
+/* The booking page styling  */
+.main__book{
+    max-width: var(--max-content-width);
+    background:linear-gradient(50deg, #0009, #0005), url('../assets/photos/09-night.jpg');
+    background-size: cover;
+    background-position: 70% center;
+}
+.main__book_header{
+    text-align: center;
+    font-weight: 400;
 
+}
+.main__book_input{
+    width: 100%;
+    background: #fff;
+    background: url('../assets/photos/09-day.jpg');
+    background-position: center 38%;
+    background-size: 200%;
+    background-repeat: no-repeat;
+    min-height:6.25rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.main__book_inputfields{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: flex-end;
+    margin: .4rem 0;
+}
+
+.main__book_inputfield{
+    max-width: 70px;
+    text-align: center;
+    margin: .2rem 1rem;
+}
+.main__book_inputfield::-webkit-inner-spin-button{
+    appearance: none;
+
+}
+.main__book_input_label{
+    display: block;
+    text-align: center;
+    font-weight: 800;
+}
+.book__card__img{
+    width: 100%;
+    max-width: 300px;
+}
+.main__book_cards{
+    display: flex;
+    flex-direction: column;
+
+    margin: 3rem 0;
+}
+
+.book__card{
+    display: flex;
+    background: var(--navbar_menu-text-color);
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    
+}
+.book__card__text{
+    margin: 0 1rem;
+}
+.book__card__price{
+    justify-self: flex-end ;
+    margin-left: auto;
+    text-align: right;
+
+}
+.book__card__price p{
+    border: .1rem solid var(--hover-focus-color);
+    display: table;
+    padding:.2rem 1rem;
+    font-size: 1.25rem;
+    margin-left: auto;
+}
+.book__card__price button{
+    background-color: var(--black-background);
+    color: var(--navbar_menu-text-color);
+    padding:.4rem 3rem;
+    font-size: 1.12rem;
+}
