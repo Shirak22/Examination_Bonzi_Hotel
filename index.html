@@ -10,125 +10,245 @@
 </head>
 
 <body>
-    <!-- Navbar  -->
-    <nav class="navbar">
-        <figure class="navbar__logo"> <img src="assets/logo/bonz.ai-logo-white-landscape.png" alt="Bonz.ai"> </figure>
-        <ul class="navbar__menu">
-            <li><a href="#">about</a></li>
-            <li><a href="#">gallery</a></li>
-            <li><a href="#">booking</a></li>
-            <li><a href="#">contact</a></li>
-        </ul>
-    </nav>
 
-    <!-- Hero section  -->
-    <section class="hero">
-        <figure class="hero__logo"> <img src="assets/logo/bonz.ai-logo-white-portrait.png" alt="Logo"></figure>
-        <figure class="hero__arrow_icon">&#129123;</figure>
-    </section>
+    <div class="navbar__wrapper">
+        <!-- Navbar  -->
+        <nav class="navbar">
+            
+                <figure class="navbar__logo"> <img src="assets/logo/bonz.ai-logo-white-landscape.png" alt="Bonz.ai">
+                </figure>
+                <ul class="navbar__menu">
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">gallery</a></li>
+                    <li><a href="#">booking</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+       
+    
+        </nav>
+    </div>
+        <!-- Hero section  -->
+        <section class="hero">
+            <figure class="hero__logo"> <img src="assets/logo/bonz.ai-logo-white-portrait-full.png" alt="Logo"></figure>
+            <figure class="hero__arrow_icon"><a href="#main">&#129123;</a></figure>
+        </section>
 
 
-    <main>
-        <section class="main__content">
-            <h1 class="main__content_header">step into the bonz.ai experience </h1>
+        <main id="main">
+            <section class="main__content">
+                <h1 class="main__content_header">step into the bonz.ai experience </h1>
 
-            <!-- the booking section in the main page  -->
-            <section class="main__content_booking">
+                <!-- the booking section in the main page  -->
+                <section class="main__content_booking">
 
-                <!-- the left section ad modals  -->
-                <article class="main__content_booking_left">
-                    <article class="main__content_booking_left_article">
-                        <p>interested in booking
-                            the bonz.ai facilities for
-                            a private group?
-                        </p>
-                        <button>book a call with us</button>
+                    <!-- the left section ad modals  -->
+                    <article class="main__content_booking_left">
+                        <article class="main__content_booking_left_article">
+                            <p>interested in booking
+                                the bonz.ai facilities for
+                                a private group?
+                            </p>
+                            <button>book a call with us</button>
+                        </article>
+                        <article class="main__content_booking_left_article">
+                            <p>curious about
+                                the bonz.ai facilites?
+                            </p>
+                            <button>visit gallery</button>
+                        </article>
                     </article>
-                    <article class="main__content_booking_left_article">
-                        <p>curious about
-                            the bonz.ai facilites?
-                        </p>
-                        <button>visit gallery</button>
+
+                    <!-- booking form -arrival- -departure-  -->
+                    <article  class="main__content_booking_right">   
+                        <form action="" class="main__content_booking_right_form">
+
+                            <section class="main__content_booking_right_arrival_departure">
+                                <aside class="main__content_booking_right_arrival">
+                                    <label for="input_arrival">arrival</label>
+                                    <input type="date" id="input_arrival" name="arrival">
+                                </aside>
+                                <aside class="main__content_booking_right_departure">
+                                    <label for="input_departure">departure</label>
+                                    <input type="date" id="input_departure" name="departure">
+                                </aside>
+                            </section>
+                            <aside class="main__content_booking_right_guests">
+                                <label for="input_guests">guests</label>
+                                <input type="number" id="input_guests" name="guests" min="1" value="1">
+                            </aside>
+                            <button>check availibility</button>
+                        </form>
                     </article>
+                    
+                </section>
+
+                <!-- experiences and spa packages section  -->
+                <section class="main__content_packages">
+                    <h2 class="main__content_packages_title">experiences</h2>
+                    <section class="main__content_packages_offercards">
+                        <article class="offercard">
+                            <img class="offercard__img" src="../assets/content_assets/Conrad-Maldives.jpg" alt="">
+                            <section class="offercard__content">
+                                <h2 class="offercard__content_header">honeymoon experience</h2>
+                                <p class="offercard__content_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                                    sodales efficitur neque in mollis. Suspendisse tempor facilisis bibendum.</p>
+                                <button class="offercard__content_button">explore</button>
+                            </section>
+                            
+                        </article>
+                        <article class="offercard">
+                            <img class="offercard__img" src="../assets/content_assets/post-photo1.Jpeg" alt="">
+                            <section class="offercard__content">
+                                <h2 class="offercard__content_header">honeymoon experience</h2>
+                                <p class="offercard__content_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                                    sodales efficitur neque in mollis. Suspendisse tempor facilisis bibendum.</p>
+                                <button class="offercard__content_button">explore</button>
+                            </section>
+                            
+                        </article>
+                        <article class="offercard">
+                            <img class="offercard__img" src="../assets/content_assets/post-photo3.jpg" alt="">
+                            <section class="offercard__content">
+                                <h2 class="offercard__content_header">honeymoon experience</h2>
+                                <p class="offercard__content_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                                    sodales efficitur neque in mollis. Suspendisse tempor facilisis bibendum.</p>
+                                <button class="offercard__content_button">explore</button>
+                            </section>
+                            
+                        </article>
+                        <article class="offercard">
+                            <img class="offercard__img" src="../assets/content_assets/post-photo5.png" alt="">
+                            <section class="offercard__content">
+                                <h2 class="offercard__content_header">honeymoon experience</h2>
+                                <p class="offercard__content_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                                    sodales efficitur neque in mollis. Suspendisse tempor facilisis bibendum.</p>
+                                <button class="offercard__content_button">explore</button>
+                            </section>
+                            
+                        </article>
+                    </section>
+
+                </section>
+
+                <section class="main__content_packages">
+                    <h2 class="main__content_packages_title">Spa and relax</h2>
+                    <section class="main__content_packages_offercards">
+                        <article class="offercard">
+                            <img class="offercard__img" src="../assets/content_assets/post-photo7.jpg" alt="">
+                            <section class="offercard__content">
+                                <h2 class="offercard__content_header">honeymoon experience</h2>
+                                <p class="offercard__content_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                                    sodales efficitur neque in mollis. Suspendisse tempor facilisis bibendum.</p>
+                                <button class="offercard__content_button">explore</button>
+                            </section>
+                            
+                        </article>
+                        <article class="offercard">
+                            <img class="offercard__img" src="../assets/content_assets/post-photo4.jpg" alt="">
+                            <section class="offercard__content">
+                                <h2 class="offercard__content_header">honeymoon experience</h2>
+                                <p class="offercard__content_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                                    sodales efficitur neque in mollis. Suspendisse tempor facilisis bibendum.</p>
+                                <button class="offercard__content_button">explore</button>
+                            </section>
+                            
+                        </article>
+                        <article class="offercard">
+                            <img class="offercard__img" src="../assets/content_assets/post-photo2.jpg" alt="">
+                            <section class="offercard__content">
+                                <h2 class="offercard__content_header">honeymoon experience</h2>
+                                <p class="offercard__content_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                                    sodales efficitur neque in mollis. Suspendisse tempor facilisis bibendum.</p>
+                                <button class="offercard__content_button">explore</button>
+                            </section>
+                            
+                        </article>
+                        <article class="offercard">
+                            <img class="offercard__img" src="../assets/content_assets/post-photo8.jpg" alt="">
+                            <section class="offercard__content">
+                                <h2 class="offercard__content_header">honeymoon experience</h2>
+                                <p class="offercard__content_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                                    sodales efficitur neque in mollis. Suspendisse tempor facilisis bibendum.</p>
+                                <button class="offercard__content_button">explore</button>
+                            </section>
+                            
+                        </article>
+                    </section>
+
+                </section>
+
+                <!-- jumbotron Section in the main page  -->
+                <article class="main__content_jumbotron jumbotron">
+                    <img class="jumbotron_img" src="../assets/content_assets/post-photo6.jpg" alt="">
+                    <aside class="jumbotron_content">
+                        <h2 class="jumbotron__header">spa journeys</h2>
+                        <p class="jumbotron__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                            sodales
+                            efficitur neque in mollis. Suspendisse tempor facilisis bibendum. Curabitur consequat eu
+                            nunc in
+                            ultrices. Nam et tortor quis libero aliquam commodo id dictum enim. Mauris pulvinar volutpat
+                            ex
+                            vel dictum. Vestibulum rutrum quis mi et ultrices. Ut ut orci et mauris semper pharetra in
+                            quis
+                            enim. </p>
+                        <button class="jumbotron__btn">explore</button>
+                    </aside>
                 </article>
 
-                <!-- booking form -arrival- -departure-  -->
-                <form action="" class="main__content_booking_right">
+                <!-- the text ad about Bonz.ai -->
+                <article class="main__content_text_ad">
+                    <h1 class="main__content_text_ad_header">organize your next vacation with bonz.ai</h1>
+                    <p class="main__content_text_ad_text">DIRECT PAYMENT AT THE HOTEL | BEST PRICE GUARANTEED | FLEXIBLE
+                        CANCELLATION POLICY |<br> UNIQUE DISCOUNTS | NO ADDITIONAL CHARGES | EXCLUSIVE ROOMS</p>
+                </article>
 
-                    <section class="main__content_booking_right_arrival_departure">
-                        <aside class="main__content_booking_right_arrival">
-                            <label for="input_arrival">arrival</label>
-                            <input type="date" id="input_arrival" name="arrival">
-                        </aside>
-                        <aside class="main__content_booking_right_departure">
-                            <label for="input_departure">departure</label>
-                            <input type="date" id="input_departure" name="departure">
-                        </aside>
-                    </section>
-                    <aside class="main__content_booking_right_guests">
-                        <label for="input_guests">guests</label>
-                        <input type="number" id="input_guests" name="guests" min="1" value="1">
+                <!-- the newsletter -->
+                <form action="" class="email_subscription">
+                    <label for="email_subscription">
+                        <h1>keep up to date</h1>
+                    </label>
+                    <aside class="email_subscription_inputfield">
+                        <input type="email" class="email_subscription_input" id="email_subscription" placeholder="Your@mail.com">
+                        <button class="email_subscription_btn">join newsletter</button>
                     </aside>
-                    <button>check availibility</button>
+                    
                 </form>
             </section>
+        </main>
 
-            <section class="main__content_packages">
-                <section class="main__content_packages_offercards">
-                    <article class="offercard">
-                        <img class="offercard__img" src="" alt="">
-                        <h2 class="offercard__header">honeymoon experience</h2>
-                        <p class="offercard__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-                            sodales efficitur neque in mollis. Suspendisse tempor facilisis bibendum.</p>
-                        <button class="offercard__button">explore</button>
-                    </article>
-
-                </section>
-
-                <section class="main__content_packages_offercards">
-                    <article class="offercard">
-                        <img class="offercard__img" src="" alt="">
-                        <h2 class="offercard__header">honeymoon experience</h2>
-                        <p class="offercard__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-                            sodales efficitur neque in mollis. Suspendisse tempor facilisis bibendum.</p>
-                        <button class="offercard__button">explore</button>
-                    </article>
-                </section>
+        <footer>
+            <!-- the brands' carusal  -->
+            <section class="footer__brand_carusel">
+                <img src="../assets/content_assets/Vings.png" alt="Ving">
+                <img src="../assets/content_assets/Hotels.png" alt="booking">
+                <img src="../assets/content_assets/Booking.png" alt="hotels">
+                <img src="../assets/content_assets/trivago.png" alt="trivago">
             </section>
-            <article class="main__content_jumbotron jumbotron">
-                <img class="jumbotron_img" src="" alt="">
-                <aside class="main__content_jumbotron_content">
-                    <h1 class="jumbotron__header">spa journeys</h1>
-                    <p class="jumbotron__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sodales
-                        efficitur neque in mollis. Suspendisse tempor facilisis bibendum. Curabitur consequat eu nunc in
-                        ultrices. Nam et tortor quis libero aliquam commodo id dictum enim. Mauris pulvinar volutpat ex
-                        vel dictum. Vestibulum rutrum quis mi et ultrices. Ut ut orci et mauris semper pharetra in quis
-                        enim. </p>
-                    <button>explore</button>
-                </aside>
-            </article>
 
-            <article class="main__content_text_ad">
-                <h1 class="main__content_text_ad_header">organize your next vacation with bonz.ai</h1>
-                <p class="main__content_text_ad_text">DIRECT PAYMENT AT THE HOTEL | BEST PRICE GUARANTEED | FLEXIBLE
-                    CANCELLATION POLICY | UNIQUE DISCOUNTS | NO ADDITIONAL CHARGES | EXCLUSIVE ROOMS</p>
-            </article>
+            <!-- Bonz.ai footer information   -->
+            <section class="footer__info">
+                <article class="footer__info_adress">
+                    <p>
+                        Koh Rong Archipelago, Near Sihanoukville, Cambodia<br>
+                        +855 26 47 898contact@bonz.ai
+                    </p>
+                </article>
+                <article class="footer__info_social">
+                    <a href=""><img src="../assets/content_assets/facebook.png" alt=""> </a>
+                    <a href=""><img src="../assets/content_assets/instagram.png" alt=""> </a>
+                    <a href=""><img src="../assets/content_assets/twetter.png" alt=""> </a>
+                </article>
+                <article class="footer__copyrights">
+                    <p>
+                        Copyright © 2022 bonz.ai™<br>
+                        All rights reserved
+                    </p>
+                </article>
+            </section>
 
-            <form action="" class="main__content_email_subscription">
-                <label for="email_subscription">
-                    <h1>keep up to date</h1>
-                </label>
-                <input type="email" class="email_subscription_input" id="email_subscription">
-                <button>join newsletter</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <section class="main__content_brand_carusel">
-        </section>
-        <section></section>
-
-    </footer>
+        </footer>
+    
+        <script src="js/script.js"></script>
 </body>
 
 </html>

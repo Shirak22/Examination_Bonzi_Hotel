@@ -1,16 +1,382 @@
-:root{
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600;800&display=swap');
 
+:root {
 
-
+    --navbar_menu-text-color: #FEFDFC;
+    --hover-focus-color: #2A8529;
+    --black-background: #08090B;
+    --black-background-alpha-5: rgba(0, 0, 0, .5);
+    --max-content-width: 1200px;
 }
 
 
 
-*{
+* {
     box-sizing: border-box;
+    font-family: 'Maven Pro', sans-serif;
+    text-transform: lowercase;
 }
 
-body{
+a{text-decoration: none;}
+
+body {
     margin: 0;
+    background-color: var(--black-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+button {
+    font-weight: 800;
+    font-size: 1.12rem;
+    padding: .2rem .5rem;
+    border-radius: 2px;
+    border: none;
+}
+
+
+/* navbar section  */
+.navbar__wrapper {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 1s;
+    z-index: 100;
+}
+
+.navbar {
+
+    margin: 0 auto;
+    padding: .5rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: var(--max-content-width);
+    border-radius: 1rem;
+}
+
+.navbar--onscroll {
+    background-color: var(--black-background);
+
+}
+
+.navbar__logo {
+    flex-grow: 1;
+    margin: 0;
+
+}
+
+.navbar__logo img {
+    max-width: 240px;
+}
+
+.navbar__menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1 0 auto;
+}
+
+.navbar__menu :is(a, a:visited) {
+    color: var(--navbar_menu-text-color);
+    text-decoration: none;
+}
+
+.navbar__menu a:hover {
+    color: var(--hover-focus-color);
+}
+
+/* Hero section "Intro page width the logo" */
+
+.hero {
+    display: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url('../assets/photos/09-night.jpg');
+    background-size: cover;
+}
+
+.hero__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero__logo img {
+    max-width: 240px;
+}
+
+.hero__arrow_icon {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    border: .1rem solid var(--navbar_menu-text-color);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    transition: .1s;
+}
+
+.hero__arrow_icon :is(a, a:visited) {
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--navbar_menu-text-color);
+}
+
+.hero__arrow_icon:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+
+
+/* main section/ content section  */
+main {
+    padding: 0 2rem;
+    width: 100%;
+}
+
+.main__content {
+    margin: 0 auto;
+    /* background: #2A8529; */
+    max-width: var(--max-content-width);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main__content_header {
+    font-weight: 400;
+    font-size: 3rem;
+    color: var(--navbar_menu-text-color);
+}
+
+
+/* Booking section in the main page  */
+.main__content_booking {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    background-image: url('../assets/photos/08-night.jpg');
+    background-size: cover;
+}
+
+.main__content_booking_left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--navbar_menu-text-color);
+    flex: 1 0 50%;
+    padding: 3rem;
+    height: 41.8rem;
+}
+
+.main__content_booking_left_article {
+    background: var(--black-background-alpha-5);
+    padding: 3rem;
+    min-height: 199px;
+    max-width: 360px;
+    margin: 1rem;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__content_booking_left_article p {
+    font-size: 1.12rem;
+    text-align: center;
+    font-weight: 800;
+}
+
+.main__content_booking_left_article button {
+    align-self: center;
+}
+
+.main__content_booking_right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--navbar_menu-text-color);
+    flex: 1 0 50%;
+    padding: 3rem;
+    height: 41.8rem;
+
+}
+
+.main__content_booking_right_form {
+    background: var(--black-background-alpha-5);
+    padding: 3rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+/* the package card section  */
+.main__content_packages{
+    width: 100%;
+}
+.main__content_packages_title{
+    color: var(--navbar_menu-text-color);
+    text-align: center;
+    font-weight: 400;
+    font-size: 2.25rem;
+    margin:2.5rem ;
+}
+.main__content_packages_offercards{
+    display: flex;
+    justify-content: space-between;
+}
+.offercard{
+    background-color: var(--navbar_menu-text-color);
+    max-width: 15rem;
+  
+}
+.offercard img{width: 100%; height:12.5rem; object-fit: cover;}
+.offercard__content{padding: 1rem;}
+.offercard__content_header{
+    font-size: 1.12rem;
+    text-align: center;
+}
+.offercard__content_text{
+    font-size: .75rem;
+}
+.offercard__content_button{
+    width: 100%;
+    font-weight: 400;
+    background: var(--black-background);
+    color: var(--navbar_menu-text-color);
+    padding: .5rem 0;
+}
+
+/* Jubmotron  */
+.jumbotron{
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+.jumbotron_img{
+    max-width: 25rem;
+}
+
+.jumbotron_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.jumbotron__header{
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--navbar_menu-text-color);
+}
+.jumbotron__text{
+    color: var(--navbar_menu-text-color);
+}
+.jumbotron__btn{
+    margin-right: auto;
+    padding: .2rem 2rem;
+}
+
+.main__content_jumbotron{
+    background:linear-gradient(50deg, #0009, #0005),url('../assets/photos/09-night.jpg') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* text AD */
+
+.main__content_text_ad{
+    color: var(--navbar_menu-text-color);
+    text-align: center;
+    margin: 5rem;
+
+
+}
+.main__content_text_ad_header{
+    font-size: 2.25rem;
+}
+
+/* The newsletter styling  */
+.email_subscription{
+    color: var(--navbar_menu-text-color);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 3rem 0;
+    background:linear-gradient(50deg, #0009, #0005),url('../assets/photos/09-night.jpg') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.email_subscription_input
+{
+  appearance: none;
+  outline: none;
+  border: none;
+  padding: .2rem 1rem;
+  height: 2rem;
+  border-radius: 6px 0 0 6px;
+  flex: 1;
+  
+}
+.email_subscription_inputfield{
+    display: flex;
+    gap: .37rem;
+    width:31.25rem;
+}
+.email_subscription_btn{
+  appearance: none;
+  outline: none;
+  border: none;
+  padding: .2rem 1rem;
+  height: 2rem;
+  border-radius:0 6px 6px 0;
+  
+}
+
+
+/* The footer Section  */
+footer{
+    margin: 5rem 0;
+}
+.footer__brand_carusel{
+    margin: 5rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+.footer__brand_carusel img{
+    height: 3rem;
+}
+
+.footer__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--navbar_menu-text-color);
+    margin-bottom: 10rem;
+}
+.footer__info_social img{
+    max-height: 2rem;
+    filter: invert(1) brightness(150%);
+    margin: 0 .2rem;
+}
+
 
