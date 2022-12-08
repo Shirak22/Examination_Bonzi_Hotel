@@ -102,6 +102,7 @@ button {
     width: 100%;
     background-image: url('../assets/photos/09-night.jpg');
     background-size: cover;
+    margin: 0;
 }
 
 .hero__logo {
@@ -109,6 +110,7 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    margin: 0;
 }
 
 .hero__logo img {
@@ -127,6 +129,7 @@ button {
     display: flex;
     justify-content: center;
     transition: .1s;
+    margin: 0;
 }
 
 .hero__arrow_icon :is(a, a:visited) {
@@ -425,6 +428,7 @@ footer{
     text-align: center;
     margin: .2rem 1rem;
 }
+
 .main__book_inputfield::-webkit-inner-spin-button{
     appearance: none;
 
@@ -545,3 +549,219 @@ footer{
 }
 
 
+
+
+@media only screen and (max-width:1024px) {
+
+    .jumbotron{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .jumbotron_img{
+        width:  100%;
+        max-width: unset;
+        margin: 0;
+        max-height: 10rem;
+        object-fit: cover;
+    }
+
+    .footer__brand_carusel{
+        margin: 5rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3rem;
+    }
+    .footer__brand_carusel img{
+        height: 2rem;
+    }
+
+    .footer__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .main__content_packages_offercards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+@media only screen and (max-width:768px) {
+   
+   main{
+    padding: 0;
+   }
+   
+   .main__content{
+    padding: 0 1rem;
+   }
+    .navbar {
+        flex-wrap: wrap;
+    }
+    
+    .main__content_booking {
+        display: block;
+        width: 100%;
+        margin: 0;
+        background-position: center;
+    }
+
+
+    .main__content_booking_left {
+        margin: 0;
+        padding:0;
+        height: auto;
+    }
+
+    .main__content_booking_left_article {
+        padding: 3rem;
+        margin: 1rem;
+        min-height: unset;
+        max-width: unset;
+        width: 100%;
+    }
+
+    .main__content_booking_right{
+        margin: 0;
+        padding:0;
+        height: auto;
+    }
+    .main__content_booking_right_form{
+        padding: 3rem;
+        margin: 1rem;
+        min-height: unset;
+        max-width: unset;
+        width: 100%;
+        
+    }
+
+
+    .main__content_header{
+        font-size:2rem;
+        text-align: center;
+    }
+
+    .offercard{
+        max-width: unset;
+    }
+
+    .email_subscription_inputfield{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 2rem;
+        
+    
+    }
+    .email_subscription_input{
+        border-radius: 6px;
+        padding: 1rem;
+    }
+
+    .email_subscription_btn{
+        border-radius: 6px;
+        
+    }
+  
+    .navbar__wrapper {
+        position: relative;
+        top: 0;
+        width: 100%;
+        transition: 1s;
+        z-index: 100;
+    }
+    
+    .navbar {
+    
+        margin: 0 auto;
+        padding: .5rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: var(--max-content-width);
+        border-radius: 1rem;
+    }
+
+    .navbar__logo{
+        margin: 0 auto;
+    }
+
+    .navbar__menu{
+        margin:1rem 0;
+        padding: 0;
+    }
+ 
+/* about page styling  */
+.about__page{
+    background:linear-gradient(50deg, #0009, #0009), url('../assets/photos/09-night.jpg');
+    background-size:cover ;
+    background-position: right center ;
+    padding: 1rem;
+}
+.about__content{
+    max-width: 960px;
+    margin: 0 auto;
+}
+/* Gallery Section  */
+.gallery__thumbnails{
+    flex-wrap: wrap;
+
+}
+.gallery__thumbnails > img{
+    width: 4.25rem;
+    height: 4.25rem;
+}
+
+/* about page / Article Section  */
+.article__sideimage_fullwidth__body{
+    flex-direction: column;
+    z-index: 1;
+    position: relative;
+}
+.article__sideimage_fullwidth__image{
+    width: 100%;
+    max-width: unset;
+    max-height: 10rem;
+
+}
+.article__sideimage_fullwidth__text{
+    font-size: 1rem;
+}
+.article__sideimage_fullwidth {
+    margin: 5rem 0;
+}
+.article__sideimage_fullwidth > aside {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.main__book_input{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.main__book_inputfields{
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.book__card{
+    flex-direction: column;
+    justify-content: center;
+}
+
+.book__card__img{
+    max-width: unset;
+}
+
+.main_content{
+    padding: 1rem;
+}
+}
