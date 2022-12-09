@@ -221,6 +221,7 @@ main {
     height: 41.8rem;
 
 }
+/* booking date input form  */
 
 .main__content_booking_right_form {
     background: var(--black-background-alpha-5);
@@ -228,12 +229,52 @@ main {
     margin: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    
     height: 100%;
+    text-align: center;
+    font-weight: 700;
+    
+}
+
+.main__content_booking_right_arrival_departure{
+    display: flex;  
+    align-items: space-between;
+    gap: 40px;
+}
+.main__content_booking_right_arrival_departure  label{
+    display: block;
+    width:100%;
+
+}
+.main__content_booking_right_guests{
+    align-self: flex-end;
+}
+#input_arrival,
+#input_departure {
+    height: 8.1rem;
+    margin: 0;
+}
+#input_guests,
+#input_arrival,
+#input_departure{
+    appearance: none;
+    border: none;
+    outline: none;
+    width: 5rem;
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-align: center;
+    padding: .5rem 0;
+    border-radius: 2px;
+
 }
 
 
+
+#input_guests::-webkit-inner-spin-button{
+    display: none;
+}
 /* the package card section  */
 .main__content_packages{
     width: 100%;
@@ -667,14 +708,14 @@ footer{
         
     }
   
-    .navbar__wrapper {
+    /* .navbar__wrapper {
         position: relative;
         top: 0;
         width: 100%;
         transition: 1s;
         z-index: 100;
     }
-    
+     */
     .navbar {
     
         margin: 0 auto;
@@ -695,6 +736,53 @@ footer{
         padding: 0;
     }
  
+/* booking date input form  */
+
+.main__content_booking_right_form {
+   padding: 1rem;
+   margin: 0;
+   align-items: center;
+ 
+}
+.main__content_booking_right_form :is(button, .main__content_booking_right_arrival_departure,.main__content_booking_right_guests){
+    margin: 2rem;
+}
+.main__content_booking_right_arrival_departure{
+    flex-direction: column;
+    gap: 1rem;
+    width: 70%;
+}
+
+.main__content_booking_right_guests{
+    align-self: unset;
+    width: 70%;
+}
+
+#input_guests,
+#input_arrival,
+#input_departure{
+    appearance: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: auto;
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-align: center;
+    padding: .5rem 0;
+    border-radius: 2px;
+
+}
+
+
+
+#input_guests::-webkit-inner-spin-button{
+    display: none;
+}
+
+
+
+
 /* about page styling  */
 .about__page{
     background:linear-gradient(50deg, #0009, #0009), url('../assets/photos/09-night.jpg');
@@ -765,3 +853,4 @@ footer{
     padding: 1rem;
 }
 }
+
